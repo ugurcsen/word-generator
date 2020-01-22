@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ugurc/CLionProjects/algoritmasorusu/main.c
+stdio.h
+-
+string.h
+C:/Users/ugurc/CLionProjects/algoritmasorusu/string.h
+math.h
+C:/Users/ugurc/CLionProjects/algoritmasorusu/math.h
+

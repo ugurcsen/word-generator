@@ -1,0 +1,3 @@
+C:/Users/ugurc/CLionProjects/algoritmasorusu/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ugurc/CLionProjects/algoritmasorusu/cmake-build-debug/CMakeFiles/algoritmasorusu.dir
+C:/Users/ugurc/CLionProjects/algoritmasorusu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
