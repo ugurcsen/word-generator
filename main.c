@@ -3,66 +3,37 @@
 #include "math.h"
 
 int main() {
-    int lengthh = 3;
-    int counter = -1;
-    char chars[(int) pow(26, lengthh)][lengthh + 1];
-
+    int lengthh;
+    scanf("%d",&lengthh);
+    int inputsLength = 26;
+    char inputs[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+                     'U', 'V', 'W', 'X', 'Y', 'Z'};
+    int counters[lengthh];
+    short flag;
     for (int j = 0; j < lengthh; ++j) {
-        counter = -1;
-        for (int i = 0; i < (int) pow(26, lengthh); ++i) {
-            if (i % (int) pow(26, j) == 0) {
-                counter++;
+        counters[j] = 0;
+    }
+    char chars[lengthh + 1];
+    chars[lengthh] = '\0';
+    while (1) {
+        flag = 1;
+        for (short j = 0; j < lengthh; ++j) {
+            if (inputsLength - 1 != counters[j]) {
+                flag = 0;
             }
-            if (counter > 25) {
-                counter = 0;
+            if (counters[j] == inputsLength) {
+                counters[j] = 0;
+                counters[j - 1]++;
             }
-            chars[i][j] = counter + 65;
+            chars[j] = inputs[counters[j]];
         }
-    }
-    /*
-    for (int i = 0; i < (int) pow(26, lengthh); ++i) {
-        if (i % (int) (26 / pow(26, 0)) == 0) {
-            counter++;
+
+        printf("%s\n", chars);
+        if (flag) {
+            break;
         }
-        chars[i][0] = counter + 65;
-    }
-    counter = -1;
-    for (int i = 0; i < (int) pow(26, lengthh); ++i) {
-        if (i % (int) (26 / pow(26, 1)) == 0) {
-            counter++;
-        }
-        if(counter>25){
-            counter = 0;
-        }
-        chars[i][1] = counter + 65;
-    }
-    */
-    for (int i = 0; i < (int) pow(26, lengthh); ++i) {
-        chars[i][lengthh] = '\0';
+        counters[lengthh - 1]++;
     }
 
-
-    for (int k = 0; k < (int) pow(26, lengthh); ++k) {
-        printf("%s\n", chars[k]);
-    }
     return 0;
 }
-//AAA
-//AAB
-//000
-//001
-//011
-//111
-//112
-
-//000
-//100
-//200
-
-//00
-//10
-//20
-//260
-//01
-//11
-//21
