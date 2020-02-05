@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ugurc/CLionProjects/algoritmasorusu/main.c
+C:/Users/ugurc/Desktop/word-generator/main.c
 stdio.h
 -
 string.h
-C:/Users/ugurc/CLionProjects/algoritmasorusu/string.h
+C:/Users/ugurc/Desktop/word-generator/string.h
 math.h
-C:/Users/ugurc/CLionProjects/algoritmasorusu/math.h
+C:/Users/ugurc/Desktop/word-generator/math.h
 

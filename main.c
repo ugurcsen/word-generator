@@ -25,6 +25,15 @@ void wordlist_generator(char inputs[], int inputsLength, int start, int stop, ch
                     counters[j] = 0;
                     counters[j - 1]++;
                 }
+            }
+            for (short j = 0; j < lengthh; ++j) {
+                if (inputsLength - 1 != counters[j]) {
+                    flag = 0;
+                }
+                if (counters[j] == inputsLength) {
+                    counters[j] = 0;
+                    counters[j - 1]++;
+                }
                 chars[j] = inputs[counters[j]];
             }
             fprintf(filePointer, "%s\n", chars);
